@@ -15,8 +15,13 @@ def count_th(word):
     # base case - if string is empty
     if len(word) < 2: # if the length of the word is 0, then there is no word
         return 0
+    
+    # recursive case
+    # look at first 2 indcies: equal to 'th'?
     elif word[0:1] == 'th':
+        # if true add a 1 (mimics a counter)
         return 1 + count_th(word[1:])
+    # keep the rest of the indices and recurse again
     else:
         return count_th(word[1:])
 
