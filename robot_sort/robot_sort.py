@@ -96,8 +96,64 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        # I believe selection sort would work well here
+        # # get the range of what we need to compare
+        # index_length = range(0, len(l) - 1)
+
+        #  # for every element in the unsorted list
+        # for i in index_length:
+        #     # set the first element in the unsorted list as default min value
+        #     min_value = i
+
+        #     # for every element to the right of i
+        #     for j in range(i + 1, len(l)):
+        #         # if element is less than current min value
+        #         if l[j] < l[min_value]:
+        #             # replace the min value
+        #             min_value = j
+            
+        #     # if the min value is lower than the default
+        #     if min_value != i:
+        #         # switch the items
+        #         l[min_value], l[i] = l[i], l[min_value]
+
+        # return l
+
+        ####################################################
+        
+     # set robot to index 0
+     # while robot can move left
+        # move robot left
+
+    # Check to see if we have sorted list
+    # while robot can move right
+        # None acts as placeholder
+        # swap the element with none
+
+        # move through the list to get smallest element
+        # while robot can move right
+            # move right
+            # if compare if held is greater ==1
+                # swap
+
+        # while comparing if element is not NONE
+            # move left
+
+        # get the NONE back
+        # swap
+        # if I can move right
+            # move the robot right
+        
+
+        
+        
+
+
+
+
+
+            
+
 
 
 if __name__ == "__main__":
