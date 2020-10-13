@@ -18,7 +18,7 @@ def count_th(word):
         return 0
     
     # recursive case
-    # look at first 2 indcies: equal to 'th'?
+    # look at first 2 indices: equal to 'th'?
     elif word[0:2] == 'th':
         # if true add a 1 (mimics a counter)
         # print(f'first letters {word[0:2]}, adding 1, and sending {word[1:]} to recurse')

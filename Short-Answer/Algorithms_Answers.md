@@ -9,23 +9,23 @@ a) The worse case Big O here is O(n)
       a = a + n * n # O(1)
 ```
 
-b) The worse case Big O here is O(n^2)
+b) The worse case Big O here is O(n log n) or O(n * log n)
 ```python
     sum = 0 # O(1)
     for i in range(n): # O(n)
       j = 1 # O(1)
-      while j < n: # O(j * n)
+      while j < n: # O(log n)
         j *= 2 # O(1)
         sum += 1 # O(1)
 ```
 
-c) The worse case Big O here is O(n) 
+c) The worse case Big O here is O(n)  
 ```python
     def bunnyEars(bunnies): # O(1)
       if bunnies == 0: # O(1)
         return 0 # O(1)
 
-      return 2 + bunnyEars(bunnies-1) # O(1)
+      return 2 + bunnyEars(bunnies-1) # O(n)
 ```
 
 ## Exercise II
