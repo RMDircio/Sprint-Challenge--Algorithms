@@ -97,6 +97,10 @@ class SortingRobot:
         Sort the robot's list.
         """
         # I believe selection sort would work well here
+        # This is an example of selection sort
+
+        ##################################################
+
         # # get the range of what we need to compare
         # index_length = range(0, len(l) - 1)
 
@@ -121,40 +125,48 @@ class SortingRobot:
 
         ####################################################
         
-     # set robot to index 0
-     # while robot can move left
-        # move robot left
+        # set robot to index 0
+        while self.can_move_left():
+            # move robot left
+            self.move_left()
+            print("Can move left, moving left")
 
-    # Check to see if we have sorted list
-    # while robot can move right
-        # None acts as placeholder
-        # swap the element with none
-
-        # move through the list to get smallest element
+        # Check to see if we have sorted list
         # while robot can move right
-            # move right
-            # if compare if held is greater ==1
-                # swap
+        while self.can_move_right():
+            # None acts as placeholder
+            # swap the element with none
+            print(self._list)
+            self.swap_item()
+            print(f"Can move right, setting down 'None', picking up {self._item}")
 
-        # while comparing if element is not NONE
-            # move left
+            # move through the list to get smallest element
+            # while robot can move right
+            while self.can_move_right():
+                # move right
+                self.move_right()
+                print("Can still move right, moving right")
+                # if compare if held is greater ==1
+                if self.compare_item() == 1:
+                    self.swap_item()
+                    print(f"item in hand was larger than {self._item}, swapped")
 
-        # get the NONE back
-        # swap
-        # if I can move right
-            # move the robot right
-        
+            # while comparing if element is not NONE
+            while self.compare_item() != None:
+                # move left
+                self.move_left()
+                print("'None' not found, moving left")
 
-        
-        
+            # get the NONE back
+            self.swap_item()
+            print("'None' found, swapped with held item")
 
-
-
-
-
+            # if robot can move right
+            if self.can_move_right():
+                # move the robot right
+                self.move_right()
             
-
-
+            
 
 if __name__ == "__main__":
     # Test our your implementation from the command line

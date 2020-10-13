@@ -6,7 +6,7 @@ a) The worse case Big O here is O(n)
 ```python 
    a = 0 # O(1)
     while (a < n * n * n): # O(n)
-      a = a + n * n # O(n)
+      a = a + n * n # O(1)
 ```
 
 b) The worse case Big O here is O(n^2)
